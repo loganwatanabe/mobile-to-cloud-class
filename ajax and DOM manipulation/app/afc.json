@@ -1,0 +1,22 @@
+{"teams": [
+	{ "location":"Pittsburgh" , "name":"Steelers" , "conference":"AFC" , "division":"North"},
+	{ "location":"Cleveland" , "name":"Browns" , "conference":"AFC" , "division":"North"},
+	{ "location":"Cincinnati" , "name":"Bengals" , "conference":"AFC" , "division":"North"},
+	{ "location":"Baltimore" , "name":"Ravens" , "conference":"AFC" , "division":"North"},
+	
+	{ "location":"New England" , "name":"Patriots" , "conference":"AFC" , "division":"East"},
+	{ "location":"Miami" , "name":"Dolphins" , "conference":"AFC" , "division":"East"},
+	{ "location":"New York" , "name":"Jets" , "conference":"AFC" , "division":"East"},
+	{ "location":"Buffalo" , "name":"Bills" , "conference":"AFC" , "division":"East"},
+	
+	{ "location":"Indianapolis" , "name":"Colts" , "conference":"AFC" , "division":"South"},
+	{ "location":"Houston" , "name":"Texans" , "conference":"AFC" , "division":"South"},
+	{ "location":"Jacksonville" , "name":"Jaguars" , "conference":"AFC" , "division":"South"},
+	{ "location":"Tennesse" , "name":"Titans" , "conference":"AFC" , "division":"South"},
+	
+	{ "location":"San Diego" , "name":"Chargers" , "conference":"AFC" , "division":"West"},
+	{ "location":"Denver" , "name":"Broncos" , "conference":"AFC" , "division":"West"},
+	{ "location":"Kansas City" , "name":"Cheifs" , "conference":"AFC" , "division":"West"},
+	{ "location":"Oakland" , "name":"Raiders" , "conference":"AFC" , "division":"West"}
+	
+	]}

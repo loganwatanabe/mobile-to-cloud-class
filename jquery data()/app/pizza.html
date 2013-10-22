@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pizza Price</title>
+  	<script type = "text/javascript" src="jquery-1.10.2.min.js"></script>
+  	<script type='text/javascript' src='pizza.js'></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="css/overrides.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+	<div id="title" class = "span12">
+		<h1>Pizza Price</h1>
+		<p>Select your pizza size and topping on the left to see the price on the right.</p>
+
+	</div>
+	<br>
+	<br>
+
+  	<div id="order" class = "span6">
+
+
+		<div id="size_form" >
+			Select a size:<br>
+			<div id="sizes">
+			</div>
+
+		</div>
+		<div id="topping_form" action="">
+			Choose your topping:<br>
+			<div id="toppings">
+			</div>
+
+		</div>
+
+
+
+  	</div>
+
+  	 <div id="pricing" class = "span6">
+  	 	<p><h4>Your Pizza</h4>
+  	 		<table id = "price_table" >
+	  	 		<tr>
+	  	 			<td>Item</td>
+	  	 			<td>Price</td>
+	  	 		</tr>
+
+	  	 		<tr id="pizza_size">
+	  	 			
+	  	 		</tr>
+	  	 		<tr id="pizza_topping">
+
+	  	 		</tr>
+
+
+	  	 		<tr id = "total">
+	  	 			<td>Total</td>
+	  	 			<td id="total_price"></td>
+	  	 		</tr>
+	  	 	</table>
+
+  	 	</p>
+
+  	</div>
+</body>
+</html>

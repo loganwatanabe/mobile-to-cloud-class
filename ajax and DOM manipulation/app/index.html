@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<script type = "text/javascript" src="jquery-1.10.2.min.js"></script>
+		<LINK href="style.css" rel="stylesheet" type="text/css">
+		<script type = "text/javascript" src="j_script.js"></script>
+	<title>NFL</title>
+	</head>
+	<body>
+		<h1> National Football League<img id= "nfl_logo" src="nfl.jpeg" width="50" height="50"></img><form id="nfl_button"><input type="button" value="logo"></form></h1>
+		<br><br>
+
+		<div id="in-line">
+		<!--buttons to fulfill some of the requirements-->
+			<form name="colorize" id="colorize">
+			  		<input type="button" value="Color!">
+			  </form>
+
+			<form name="Peyton" id="peyton">
+			  		<input type="button" value="Manning 1">
+			</form>
+
+			<form name="Eli" id="eli">
+			  		<input type="button" value="Manning 2">
+			</form>
+
+
+			<form name="last_sb" id="last_sb">
+			  		<input type="button" value="Show last year's winner">
+			</form>
+
+			<form name="next_sb" id="next_sb">
+			  		<input type="button" value="Show next year's winner">
+			</form>
+
+
+
+
+
+		</div><br>
+
+
+		<!--bttons to load the JSON files from the server-->
+
+		<div id="afc">
+		  <form name="afc_button" id="afc_button">
+		  		<input type="button" value="Generate AFC">
+		  </form>
+		  <div id="afcResponseArea"></div>
+		</div>
+
+		<div id="nfc">
+		  <form name="nfc_button" id="nfc_button">
+		  		<input type="button" value="Generate NFC" onclick="doXMLHttpRequest()">
+		  </form>
+		  <div id="nfcResponseArea"></div>
+		</div>
+
+	</body>
+</html>

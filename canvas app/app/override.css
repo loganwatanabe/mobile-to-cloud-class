@@ -1,0 +1,42 @@
+#content{
+	background-color:#b0c4de;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#index{
+	background-color:#b0c4de;
+}
+
+#body{
+	background-color:#b0c4de;
+}
+
+.red{
+	background-color:#FF0000;
+}
+
+.blue{
+	background-color:#4000FF;
+}
+
+.green{
+	background-color:#01DF01;
+}
+
+.yellow{
+	background-color:#FFFF00;
+}
+
+.white{
+	background-color:#FFFFFF;
+}
+
+.black{
+	background-color:#000000;
+}
+
+#upload .upload_form{
+	text-align=center;
+}

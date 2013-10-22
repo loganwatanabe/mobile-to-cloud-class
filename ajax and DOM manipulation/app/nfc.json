@@ -1,0 +1,22 @@
+{"teams": [
+	{ "location":"Green Bay" , "name":"Packers" , "conference":"NFC" , "division":"North"},
+	{ "location":"Minnesota" , "name":"Vikings" , "conference":"NFC" , "division":"North"},
+	{ "location":"Detroit" , "name":"Lions" , "conference":"NFC" , "division":"North"},
+	{ "location":"Chicago" , "name":"Bears" , "conference":"NFC" , "division":"North"},
+	
+	{ "location":"Dallas" , "name":"Cowboys" , "conference":"NFC" , "division":"East"},
+	{ "location":"Washington" , "name":"Redskins" , "conference":"NFC" , "division":"East"},
+	{ "location":"New York" , "name":"Giants" , "conference":"NFC" , "division":"East"},
+	{ "location":"Philadelphia" , "name":"Eagles" , "conference":"NFC" , "division":"East"},
+	
+	{ "location":"New Orleans" , "name":"Saints" , "conference":"NFC" , "division":"South"},
+	{ "location":"Atlanta" , "name":"Falcons" , "conference":"NFC" , "division":"South"},
+	{ "location":"Tampa Bay" , "name":"Buccaneers" , "conference":"NFC" , "division":"South"},
+	{ "location":"Carolina" , "name":"Panthers" , "conference":"NFC" , "division":"South"},
+	
+	{ "location":"San Francisco" , "name":"49ers" , "conference":"NFC" , "division":"West"},
+	{ "location":"Seattle" , "name":"Seahawks" , "conference":"NFC" , "division":"West"},
+	{ "location":"St. Louis" , "name":"Rams" , "conference":"NFC" , "division":"West"},
+	{ "location":"Arizona" , "name":"Cardinals" , "conference":"NFC" , "division":"West"}
+	
+	]}

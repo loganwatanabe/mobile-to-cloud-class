@@ -1,0 +1,39 @@
+#page_title{
+	color: red;
+	text-shadow:1px 1px #000000;
+}
+
+#page_tagline{
+
+	text-shadow:1px 1px #000000;
+}
+
+#body{
+	display: inline-block;
+}
+
+.team_button{
+	width: 150px;
+}
+
+.news_img{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nfl_logo{
+	height: 150px;
+	float: right;
+
+}
+
+#nfl_logo_cap{
+	font-size: 35px;
+	
+
+}
+
+#toggle_background{
+	display: none;
+}

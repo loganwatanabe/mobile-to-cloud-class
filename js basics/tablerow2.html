@@ -1,0 +1,113 @@
+
+<!--Logan Watanabe-->
+<!--I hand coded in the third column, and made the addBorder functionality-->
+<!--I tried to do the addColumn functionality,and could insert the field form and
+the column title, but could not get the data passed to the AddRow function.
+I think it would take some fenaggling in the addRow func with some loops (to account
+for the variable number of columns) which I didn't know how to do.-->
+
+<html>
+<head>
+
+  <script language='javascript'>
+
+	//added in the c column
+    function addRow(a,b, c) {
+      var r  = document.createElement('tr');
+      var ca = document.createElement('td');
+      var cb = document.createElement('td');
+	  //added a column
+	  var cc = document.createElement('td');
+	  
+	  
+      var ta = document.createTextNode(a);
+      var tb = document.createTextNode(b);
+	  //c's value
+	  var tc = document.createTextNode(c);
+	  
+      var t  = document.getElementById('tbl');
+
+
+      ca.appendChild(ta);
+      cb.appendChild(tb);
+	  
+	  //
+	  cc.appendChild(tc);
+
+      r.appendChild(ca);
+      r.appendChild(cb);
+	  //
+	  r.appendChild(cc);
+
+      t.tBodies[0].appendChild(r);
+    }
+	
+	//function to add a border
+	function addBorder(){
+	var t = document.getElementById('tbl');
+	t.setAttribute("border", 1);
+	
+	}
+	
+	//function to add another column
+	//global variable to keep track of column letter
+	alpha = 68;//alpha code for "D"
+	function addColumn(){
+			
+			var row_name = String.fromCharCode(alpha);
+			//creating the element to be put in
+			var prompt = document.createTextNode("Column " + row_name.toUpperCase() + ": ");
+			var new_field = document.createElement("input");
+			new_field.type = "text";
+			new_field.name = row_name;
+
+			//getting to the part of the doc
+			var fo = document.forms[0];
+			var butt = document.forms[0].lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling;//the addRow button
+			//inserting elements
+			fo.insertBefore(new_field,butt);//sitcks the field form under the last field form
+			fo.insertBefore(prompt, new_field);
+			var brek = document.createElement("br");//inserts line break
+			fo.insertBefore(brek,butt);
+			
+			//now the column in the table
+			var t  = document.getElementById('title_row');//had to id this
+			var last_col = t.lastChild.lastElementChild;
+			var td = document.createElement('td');
+			var tbl_title = document.createTextNode('Column ' + row_name.toUpperCase());
+			
+			td.appendChild(tbl_title);
+			//last_col.appendChild(td);
+			t.appendChild(td);
+			alpha ++;
+			}
+
+  </script>
+
+</head>
+<body>
+
+   <form>
+      Column A: <input type="text" name="a">
+  <br>Column B: <input type="text" name="b">
+  
+						<!-- Hand coding in this form field, and also added to the button-->
+						<br>Column C: <input type="text" name="c">
+						
+  <br><input type="button" value='add Row' onClick='javascript:addRow(a.value, b.value, c.value)'>
+
+   <!--button to add a border to the table-->
+   <br><input type="button" value='add Border' onClick='javascript:addBorder()'>
+   
+   
+   <!--button to add another column-->
+   <br><input type="button" value='add Column' onClick='javascript:addColumn()'>
+  </form>
+  
+  
+   <table id="tbl">
+     <tr id="title_row"><td>Column A</td><td>Column B</td><td>Column C</td></tr>
+   </table>
+
+</body>
+</html>

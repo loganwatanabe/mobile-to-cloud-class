@@ -1,0 +1,15 @@
+#index-button-list{
+	width = 33%;
+	margin: 0 auto;
+}
+
+.nav-buttons{
+	text-align: center;
+	margin:0 auto;
+}
+
+@media all and (max-width: 620px) and (min-width: 0px) { /**at narrow widths hide buttons*/
+	.nav-buttons{
+		display: none;
+	}
+}

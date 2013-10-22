@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Basic Mobile</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="jquery.mobile-1.3.2/jquery.mobile-1.3.2.css" />
+	<script src="jquery-1.10.2.min.js"></script>
+	<script src="swiper.js"></script>
+	<script src="jquery.mobile-1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	<link rel="stylesheet" href="override.css" />
+</head>
+
+
+
+<body> 
+
+<!--INDEX-->
+<div data-role="page" class= "is-page" id = "index" data-next = "index.html#page1">
+
+	<div data-role="header">
+		<h1>Information Systems</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>
+			<h3>Carnegie Mellon University</h3>
+			<h5>The Information System's Major</h5>
+		Information Systems is a unique and innovative program in Carnegie Mellon's Dietrich College of Humanities and Social Sciences. Students completing the program will be well grounded in the fundamentals of organization theory, decision making, teamwork and leadership, and research methods as well as current and emerging information systems technologies.
+		<br>
+		The "Professional Core" of the Information Systems curriculum include the following five courses:
+		</p>
+		(click or swipe the page to go through the courses)
+		<ul data-role="listview" data-inset="true" id="index-button-list">
+			<li><a href="#page1" data-transition="slide">67-250</a></li>
+			<li><a href="#page2" data-transition="flow">67-272</a></li>
+			<li><a href="page3.html" data-transition="flow" >67-371</a></li>
+			<li><a href="page4.html" data-transition="flow" >67-373</a></li>
+			<li><a href="page5.html" data-transition="flow" >67-475</a></li>
+		</ul>
+
+	</div><!-- /content -->
+<br><br><br>
+	<div class="nav-buttons">
+		<a href="index.html#page1" data-role="button" data-icon="arrow-r" data-inline="true" data-transition="slide">Next</a>
+	</div>
+
+</div><!-- /page -->
+
+
+
+<!--NEXT PAGE-->
+<div data-role="page" class= "is-page" id="page1" data-prev="index.html" data-next = "index.html#page2">
+
+	<div data-role="header">
+		<h1>67-250</h1>
+		<a href="index.html" data-icon="home" data-theme="b" data-transition="slide" data-direction="reverse">Home</a>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>
+			<h3>67-250 The Information Systems Milieux</h3>
+			<h5>Fall: 9 units</h5>
+			Information systems (IS) are changing work practices, reshaping organizations, transforming cultures, and giving new meaning to the ways we see the world. This course is designed to help students understand the role of IS in modern society and the means by which these systems are created. It provides not only a framework for understanding information and information systems, but also a language to identify their dynamic complexities and interdependencies. Topics include: current trends in IS, structured approaches to the creation of IS, corporate IS competitive advantage, business process improvements/reengineering, eCommerce and the digital economy, knowledge management, decisions support systems, and the implications of IS for people, organizations and society. Classes will use a combination of lectures, class discussions, reading assignments, case studies, group projects, and “hands-on” work in database design. This course is a required professional core course for sophomores in the IS major. Non-IS sophomores may enroll by special permission.
+		</p>
+	</div><!-- /content -->
+<br><br><br>
+	<div class="nav-buttons">
+		<a href="index.html" data-role="button" data-icon="arrow-l" data-inline="true" data-transition="slide" data-direction="reverse">Prev</a>
+		<a href="index.html#page2" data-role="button" data-icon="arrow-r" data-inline="true" data-transition="slide">Next</a>
+	</div>
+
+</div><!-- /page -->
+
+
+
+
+<!--NEXT PAGE-->
+<div data-role="page" class= "is-page" id="page2" data-prev="index.html#page1" data-next = "page3.html">
+
+	<div data-role="header">
+		<h1>67-272</h1>
+		<a href="index.html" data-icon="home" data-theme="b" data-transition="flow" data-direction="reverse">Home</a>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>
+			<h3>67-272  Application Design and Development</h3>
+			<h5>Spring: 9 units</h5>
+			This course provides students with the concepts and techniques to design and develop software applications, and to understand the design process. Students will learn the importance of user-centered design and will develop a prototype of a web application as a course project. In the process of developing the application, students will learn how to design and create relational databases, how to acquire competency in new programming languages quickly, how to use the Model-View-Controller pattern to develop software applications, how to ensure technical quality in software development, and how to apply principles of user-centered design. This course is a required professional core course and is open only to sophomores and juniors in the IS major who have completed 67-250 or equivalent. 
+		</p>
+	</div><!-- /content -->
+	<br><br><br>
+	<div class="nav-buttons">
+		<a href="index.html#page1" data-role="button" data-icon="arrow-l" data-inline="true" data-transition="slide" data-direction="reverse">Prev</a>
+		<a href="page3.html" data-role="button" data-icon="arrow-r" data-inline="true" data-transition="slide">Next</a>
+	</div>
+
+</div><!-- /page -->
+
+</body>
+</html>
